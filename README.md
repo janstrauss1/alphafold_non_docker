@@ -1,13 +1,28 @@
-# AlphaFold Non-Docker setup
+# AlphaFold Non-Docker setup on NEC cluster
 
 ## **Setup and installation**
 
+## Log onto cluster using your username and password
+
 ``` bash
-ssh -X smomw460@nesh-fe.rz.uni-kiel.de
+ssh -X <username>@nesh-fe.rz.uni-kiel.de
+```
+change to working directory using:
+
+``` bash
+cd $WORK
 ```
 
 ### **Install miniconda**
-
+make conda directory
+``` bash
+mkdir conda
+```
+Enter conda directory
+``` bash
+cd conda
+```
+Get conda installer and install
 ``` bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && bash Miniconda3-latest-Linux-x86_64.sh
 ```
