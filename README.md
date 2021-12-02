@@ -1,4 +1,4 @@
-# AlphaFold Non-Docker setup on NEC cluster
+# AlphaFold Non-Docker setup on NEC HPC system at RZ CAU Kiel
 
 ## **Setup and installation**
 
