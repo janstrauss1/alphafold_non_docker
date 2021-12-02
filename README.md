@@ -117,9 +117,9 @@ bash download_db.sh -d </home/johndoe/alphafold_data> -m reduced_dbs
 ```
 
 ``` bash
-alphafold_dbs_path="/gxfs_work1/geomar/<username>/alphafold/alphafold_database"
+# alphafold_database="/gxfs_work1/geomar/<username>/alphafold/alphafold_database"
 
-bash download_db.sh -d alphafold_dbs_path -m full_dbs 
+bash download_db.sh -d /gxfs_work1/geomar/<username>/alphafold/alphafold_database -m full_dbs
 ```
 
 - Option 2: Follow https://github.com/deepmind/alphafold#genetic-databases
