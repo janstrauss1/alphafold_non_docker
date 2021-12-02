@@ -95,6 +95,7 @@ cd ~/miniconda3/envs/alphafold/lib/python3.8/site-packages/ && patch -p0 < $alph
 To download download_db.sh script from github using wget
 ``` bash
 alphafold_path="/gxfs_work1/geomar/<username>/alphafold"
+
 wget -O download_db.sh https://raw.githubusercontent.com/kalininalab/alphafold_non_docker/main/download_db.sh -P alphafold_path
 ```
 
@@ -115,6 +116,12 @@ bash download_db.sh -d </home/johndoe/alphafold_data>
 # To download reduced version of the databases (reduced_dbs mode)
 # The script will create the folder </home/johndoe/alphafold_data> if it does not exist
 bash download_db.sh -d </home/johndoe/alphafold_data> -m reduced_dbs
+```
+
+``` bash
+alphafold_dbs_path="/gxfs_work1/geomar/<username>/alphafold/alphafold_database"
+
+bash download_db.sh -d alphafold_dbs_path -m full_dbs 
 ```
 
 ### **Updating existing AlphaFold installation to include AlphaFold-Multimers (v2.1.1)**
