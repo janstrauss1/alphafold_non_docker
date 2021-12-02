@@ -129,6 +129,14 @@ bash download_db.sh -d /gxfs_work1/geomar/<username>/alphafold/alphafold_databas
 
 
 ## **Running alphafold (v2.1.1)**
+
+``` bash
+alphafold_path="/gxfs_work1/geomar/<username>/alphafold"
+
+wget -O run_alphafold.sh https://raw.githubusercontent.com/kalininalab/alphafold_non_docker/main/run_alphafold.sh -P alphafold_path
+```
+
+
 - Use this [bash script](https://github.com/kalininalab/alphafold_non_docker/blob/main/run_alphafold.sh)
 
 ``` bash
