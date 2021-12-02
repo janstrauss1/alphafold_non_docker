@@ -1,6 +1,11 @@
 # AlphaFold Non-Docker setup
 
 ## **Setup and installation**
+
+``` bash
+ssh -X smomw460@nesh-fe.rz.uni-kiel.de
+```
+
 ### **Install miniconda**
 
 ``` bash
