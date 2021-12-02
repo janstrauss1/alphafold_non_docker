@@ -99,8 +99,6 @@ alphafold_path="/gxfs_work1/geomar/<username>/alphafold"
 wget -O download_db.sh https://raw.githubusercontent.com/kalininalab/alphafold_non_docker/main/download_db.sh -P alphafold_path
 ```
 
-- Option 2: Follow https://github.com/deepmind/alphafold#genetic-databases
-
 ``` bash
 # To use our download_db script (download the script first)
 Usage: download_db.sh <OPTIONS>
@@ -123,6 +121,8 @@ alphafold_dbs_path="/gxfs_work1/geomar/<username>/alphafold/alphafold_database"
 
 bash download_db.sh -d alphafold_dbs_path -m full_dbs 
 ```
+
+- Option 2: Follow https://github.com/deepmind/alphafold#genetic-databases
 
 ### **Updating existing AlphaFold installation to include AlphaFold-Multimers (v2.1.1)**
 - Please refer to [this section](https://github.com/deepmind/alphafold#updating-existing-alphafold-installation-to-include-alphafold-multimers)
