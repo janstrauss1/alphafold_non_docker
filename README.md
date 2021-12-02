@@ -53,7 +53,8 @@ conda install -y -c bioconda hmmer==3.3.2 hhsuite==3.3.0 kalign2==2.04
 
 ``` bash
 git clone https://github.com/deepmind/alphafold.git
-alphafold_path="/path/to/alphafold/git/repo"
+# alphafold_path="/path/to/alphafold/git/repo"
+alphafold_path="/gxfs_work1/geomar/smomw460/alphafold"
 ```
 
 ### **Download chemical properties to the common folder**
