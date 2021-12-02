@@ -91,6 +91,12 @@ cd ~/miniconda3/envs/alphafold/lib/python3.8/site-packages/ && patch -p0 < $alph
 
 - Option 1: Use our [download_db.sh script](https://github.com/kalininalab/alphafold_non_docker/blob/main/download_db.sh) which uses wget, rsync, gunzip and tar instead of aria2c
     - Our script maintains the AF2 [download directory structure](https://github.com/deepmind/alphafold#genetic-databases)
+To download download_db.sh script from github using wget
+alphafold_path="/gxfs_work1/geomar/<username>/alphafold"
+``` bash
+wget -O download_db.sh https://raw.githubusercontent.com/kalininalab/alphafold_non_docker/main/download_db.sh -P alphafold_path
+```
+
 - Option 2: Follow https://github.com/deepmind/alphafold#genetic-databases
 
 ``` bash
