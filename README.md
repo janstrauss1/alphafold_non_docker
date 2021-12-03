@@ -42,7 +42,7 @@ conda activate alphafold
 
 ### **Install dependencies**
 
-- Change `cudnn==8.2.1.32` and `cudatoolkit==11.0.3` versions if they are not supported in your system
+- Change `cudnn==8.2.1.32` and `cudatoolkit==11.0.3` versions if they are not supported in your system (seems to be supported on NEC cluster)
 
 ``` bash
 conda install -y -c conda-forge openmm==7.5.1 cudnn==8.2.1.32 cudatoolkit==11.0.3 pdbfixer==1.7
@@ -65,7 +65,7 @@ wget -q -P alphafold/alphafold/common/ https://git.scicore.unibas.ch/schwede/ope
 
 ### **Install alphafold dependencies**
 
-- Change `jaxlib==0.1.69+cuda<111>` version if this is not supported in your system
+- Change `jaxlib==0.1.69+cuda<111>` version if this is not supported in your system (seems to be supported on NEC cluster)
 
 _Note:_ jax updgrade: cuda111 supports cuda 11.3 - https://github.com/google/jax/issues/6628
 
@@ -118,8 +118,9 @@ bash download_db.sh -d </home/johndoe/alphafold_data> -m reduced_dbs
 
 ``` bash
 # alphafold_database="/gxfs_work1/geomar/<username>/alphafold/alphafold_database"
+# bash download_db.sh -d /gxfs_work1/geomar/<username>/alphafold/alphafold_database -m full_dbs
 
-bash download_db.sh -d /gxfs_work1/geomar/<username>/alphafold/alphafold_database -m full_dbs
+bash download_db.sh -d /gxfs_work1/geomar/<username>/alphafold/alphafold_database -m reduced_dbs
 ```
 
 - Option 2: Follow https://github.com/deepmind/alphafold#genetic-databases
