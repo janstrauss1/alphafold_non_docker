@@ -190,7 +190,8 @@ alphafold
 bash run_alphafold.sh -d /gxfs_work1/geomar/smomw453/ref_DBs/AlphaFold -o ./dummy_test/ -f ./example/query.fasta -t 2020-05-14
 
 # OR for CPU only run
-bash run_alphafold.sh -d ./alphafold_data/ -o ./dummy_test/ -f ./example/query.fasta -t 2020-05-14 -g False
+# bash run_alphafold.sh -d ./alphafold_data/ -o ./dummy_test/ -f ./example/query.fasta -t 2020-05-14 -g False
+bash run_alphafold.sh -d /gxfs_work1/geomar/smomw453/ref_DBs/AlphaFold -o ./dummy_test/ -f ./example/query.fasta -t 2020-05-14 -g False
 ```
 
 - The results folder `dummy_test` can be found in this git repo along with the query (`example/query.fasta`) used
