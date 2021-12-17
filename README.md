@@ -3,6 +3,7 @@
 ## **Setup and installation**
 
 ## Log onto cluster using your username and password
+Note: Ensure you have a VPN connection (Cisco AnyConnect Client)
 
 ``` bash
 ssh -X <username>@nesh-fe.rz.uni-kiel.de
