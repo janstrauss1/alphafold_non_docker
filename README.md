@@ -144,7 +144,7 @@ wget -O run_alphafold.sh https://raw.githubusercontent.com/kalininalab/alphafold
 ``` bash
 Usage: ./run_alphafold_v21.sh <OPTIONS>
 Required Parameters:
--d <data_dir>         Path to directory of supporting data
+-d <data_dir>         Path to directory of supporting data (e.g. /gxfs_work1/geomar/smomw453/ref_DBs/AlphaFold)
 -o <output_dir>       Path to a directory that will store the results.
 -f <fasta_path>       Path to a FASTA file containing sequence. If a FASTA file contains multiple sequences, then it will be folded as a multimer
 -t <max_template_date> Maximum template release date to consider (ISO-8601 format - i.e. YYYY-MM-DD). Important if folding historical test sets
@@ -186,7 +186,8 @@ alphafold
 
 ```
 # Example run (Uses the GPU with index id 0 as default)
-bash run_alphafold.sh -d ./alphafold_data/ -o ./dummy_test/ -f ./example/query.fasta -t 2020-05-14
+# bash run_alphafold.sh -d ./alphafold_data/ -o ./dummy_test/ -f ./example/query.fasta -t 2020-05-14
+bash run_alphafold.sh -d /gxfs_work1/geomar/smomw453/ref_DBs/AlphaFold -o ./dummy_test/ -f ./example/query.fasta -t 2020-05-14
 
 # OR for CPU only run
 bash run_alphafold.sh -d ./alphafold_data/ -o ./dummy_test/ -f ./example/query.fasta -t 2020-05-14 -g False
