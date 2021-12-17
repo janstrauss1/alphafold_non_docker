@@ -141,6 +141,12 @@ mkdir sequences
 mkdir results
 ```
 
+Download a sequence
+``` bash
+cd /gxfs_work1/geomar/<username>/alphafold/alphafold_runs/sequences
+wget -O query.fasta https://www.uniprot.org/uniprot/A0A1E7EXA4.fasta
+```
+
 ``` bash
 alphafold_path="/gxfs_work1/geomar/<username>/alphafold"
 
