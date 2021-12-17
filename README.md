@@ -132,6 +132,15 @@ bash download_db.sh -d /gxfs_work1/geomar/<username>/alphafold/alphafold_databas
 
 ## **Running alphafold (v2.1.1)**
 
+First create some folders to store sequences and results
+``` bash
+cd /gxfs_work1/geomar/<username>/alphafold/
+mkdir alphafold_runs
+cd alphafold_runs
+mkdir sequences
+mkdir results
+```
+
 ``` bash
 alphafold_path="/gxfs_work1/geomar/<username>/alphafold"
 
